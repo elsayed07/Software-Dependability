@@ -1,0 +1,117 @@
+/*
+The MIT License
+
+Copyright 2017 Mohammad.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+/* 
+    Created on : Apr 7, 2017, 10:51:15 AM
+    Author     : Mohammad
+*/
+
+*{font-family: "Segoe UI", Frutiger, "Frutiger Linotype";}
+body{background-image:url('../../img/start/Win8Background.jpg'); background-size: cover;}
+
+.drop-profile {
+    float:right;
+    margin-right:35px;
+    margin-top: 30px;
+    opacity: 0.75;
+}
+
+#wrapper {
+    width: 85%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.sortable-list li {
+    padding: 4px;
+    margin: 6px;
+    float: left;
+    border: 1px solid white;
+    list-style-image: none;
+    list-style: none;
+    list-style-type: none;
+    background-color: transparent;
+    background-position: center;
+    color: white;
+}
+
+#dashboard-layout .item.small {
+    width: 49px;
+    height: 49px;
+    background-size: 47px;
+    font-size: small;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#dashboard-layout .item.normal {
+    width: 106px;
+    height: 110px;
+    background-size: 110px;
+    font-size: medium;
+}
+
+#dashboard-layout .item.wide {
+    width: 224px;
+    height: 110px;
+    background-size: 224px;
+    font-size: larger;
+}
+
+#dashboard-layout .item.large {
+    width: 224px;
+    height: 232px;
+    background-size: 232px;
+    font-size: x-large;
+}
+
+.item.normal p{
+    margin:0px;
+    padding: 0px;
+}
+
+.item.wide p{
+    margin:0px;
+    padding: 0px;
+}
+
+.start {
+    color:white;
+    width:45%;
+    float:left;
+    margin-left: 30px;
+}
+
+.navbar-fixed-bottom {
+    background-color: green;
+    height: 35px;
+}
+
+.start-nav-icon {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+}
