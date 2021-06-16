@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title th:text="${question.title}"></title>
+    <th:block th:replace="fragments/head :: bootstrap"></th:block>
+</head>
+<body>
+<main class="container">
+    <div th:replace="fragments/navbar :: logged"></div>
+    <div class="mt-5 card">
+        <div class="card-header h4">
+            <span th:text="${question.title}"></span>
+        </div>
+        <div class="card-body">
+            <div style="white-space: pre-wrap;" th:text="${question.text}"></div>
+        </div>
+        <div class="card-footer small">
+            author: <a th:text="${question.authorName}" th:href="@{'/profile/' + ${question.authorId} + '/'}"></a>,&nbsp;
+            answers: <span th:text="${question.answerCount}"></span>,&nbsp;
+            views: <span th:text="${question.views}"></span>,&nbsp;
+            created on: <span th:text="${question.createdOn}"></span>
+            <span th:if="${question.edited}">, edited</span>
+        </div>
+    </div>
+    <form th:method="POST" th:action="@{'/question/' + ${question.id} + '/answer'}" th:object="${answerBindingModel}"
+          class="mt-3">
+        <div th:each="err : ${#fields.errors()}" th:text="${err}" class="alert alert-danger" role="alert">
+            error
+        </div>
+        <textarea class="d-block form-control" rows="3" placeholder="answer..." name="text"
+                  th:field="*{text}"></textarea>
+        <button type="submit" class="btn btn-primary">answer</button>
+    </form>
+    <div class="mt-5 mb-5">
+        <div class="mt-2 card" th:each="a : ${answers}">
+            <div class="card-header small">
+                <a th:text="${a.authorName}" th:href="@{'/profile/' + ${a.authorId} + '/'}"></a> on
+                <span th:text="${a.createdOn}"></span>&nbsp;
+                <span th:if="${a.edited}">(edited)</span>
+            </div>
+            <div class="card-body"><div style="white-space: pre-wrap;" th:text="${a.text}"></div></div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
