@@ -40,12 +40,8 @@ Analytics platform that ingests ecommerce orders, normalizes multi-currency data
 
 Python, Django, DRF, Django Ninja, PostgreSQL, Redis, Celery, Docker, Stripe, React, HTMX, Tailwind CSS, pytest, Ruff, GitHub Actions, Linux deployment.
 
-## Current Priorities
-
-- Public demos for the strongest portfolio projects
-- Cleaner screenshots and short walkthroughs for pinned repositories
-- Better repository curation so the strongest work is visible first
 
 ## Contact
 
+- E-mail: elsayedelsayad41@gmail.com
 - GitHub: [github.com/elsayed07](https://github.com/elsayed07)
