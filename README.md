@@ -49,5 +49,3 @@ Python, Django, DRF, Django Ninja, PostgreSQL, Redis, Celery, Docker, Stripe, Re
 ## Contact
 
 - GitHub: [github.com/elsayed07](https://github.com/elsayed07)
-- LinkedIn: add your LinkedIn URL
-- Email: add your preferred email
